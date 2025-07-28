@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_color"
+    tools:context=".TesteazaAlgoritm">
+
+    <TextView
+        android:id="@+id/textViewInterval2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color"
+        android:textStyle="italic"
+        android:text="Introduceți valori separate prin virgulă sau selectați intervalul de valori:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/inputValori2"
+        android:textColor="@color/text_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valori separate prin virgulă"
+        android:textColorHint="@color/button_color"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textViewSau2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sau"
+        android:textStyle="italic"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/inputMinValue2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valoare minimă"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/button_color"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/inputMaxValue2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valoare maximă"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/button_color"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/inputNumarValori2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numărul de valori"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/button_color"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonGenerateRandom2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/button_color"
+        android:textColor="@color/text_color"
+        android:text="Generează aleator" />
+
+    <TextView
+        android:id="@+id/textViewAlgoritmi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selectați primul algoritm de sortare:"
+        android:textStyle="italic"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <ListView
+        android:id="@+id/listViewAlgoritmi2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/text_color"/>
+
+    <TextView
+        android:id="@+id/textViewAlgoritmi3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selectați al doilea algoritm de sortare:"
+        android:textStyle="italic"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <ListView
+        android:id="@+id/listViewAlgoritmi3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/text_color"/>
+
+    <Button
+        android:id="@+id/buttonStartSortare2"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:background="@color/button_color"
+        android:textColor="@color/text_color"
+        android:text="Începe compararea" />
+
+</LinearLayout>

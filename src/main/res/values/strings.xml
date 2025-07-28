@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Proiect</string>
+
+    <string-array name="options_alg">
+        <item>Quick Sort</item>
+        <item>Merge Sort</item>
+        <item>Insertion Sort</item>
+        <item>Selection Sort</item>
+        <item>Bubble Sort</item>
+    </string-array>
+</resources>
+

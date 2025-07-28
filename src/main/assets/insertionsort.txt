@@ -1,0 +1,27 @@
+Insertion Sort
+
+Descriere:
+Insertion Sort este un algoritm de sortare care construiește lista sortată element cu element. La fiecare pas, algoritmul ia următorul element din lista nesortată, îl inserează în poziția corectă în lista sortată, și repetă până când toate elementele sunt sortate.
+
+Complexitate:
+- Cazul cel mai bun: O(n) - când lista este deja sortată.
+- Cazul mediu: O(n^2)
+- Cazul cel mai rău: O(n^2)
+
+Insertion Sort este eficient pentru liste mici sau aproape sortate. Este un algoritm stabil și ușor de implementat.
+
+Cod Java:
+public class InsertionSort {
+    public void insertionSort(int[] array) {
+        int n = array.length;
+        for (int i = 1; i < n; ++i) {
+            int key = array[i];
+            int j = i - 1;
+            while (j >= 0 && array[j] > key) {
+                array[j + 1] = array[j];
+                j = j - 1;
+            }
+            array[j + 1] = key;
+        }
+    }
+}

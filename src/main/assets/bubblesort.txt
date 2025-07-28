@@ -1,0 +1,28 @@
+Bubble Sort
+
+Descriere:
+Bubble Sort este un algoritm simplu de sortare care parcurge în mod repetat lista, comparând elementele adiacente și interschimbându-le dacă sunt în ordine greșită. Parcurgerea listei se repetă până când lista este sortată. Numele algoritmului provine de la faptul că elementele mai mari "bulează" (se ridică) spre sfârșitul listei.
+
+Complexitate:
+- Cazul cel mai bun: O(n) - când lista este deja sortată.
+- Cazul mediu: O(n^2)
+- Cazul cel mai rău: O(n^2)
+
+Bubble Sort nu este un algoritm foarte eficient pentru liste mari, deoarece are o complexitate de timp quadratică. Cu toate acestea, este simplu de implementat și poate fi util pentru liste mici sau aproape sortate.
+
+Cod Java:
+public class BubbleSort {
+    public void bubbleSort(int[] array) {
+        int n = array.length;
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - i - 1; j++) {
+                if (array[j] > array[j + 1]) {
+                    // Interschimbare
+                    int temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+                }
+            }
+        }
+    }
+}

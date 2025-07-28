@@ -1,0 +1,43 @@
+Quick Sort
+
+Descriere:
+Quick Sort este un algoritm de sortare eficient care folosește metoda divide et impera. Alege un element pivot, împarte lista în două subliste: una cu elemente mai mici decât pivotul și alta cu elemente mai mari. Sortează recursiv sublistele și le combină. Alegerea pivotului poate varia, dar o alegere bună a pivotului este esențială pentru performanță.
+
+Complexitate:
+- Cazul cel mai bun: O(n log n)
+- Cazul mediu: O(n log n)
+- Cazul cel mai rău: O(n^2) - când pivotul este ales prost, de exemplu, mereu cel mai mic sau cel mai mare element.
+
+Quick Sort este unul dintre cei mai rapizi algoritmi de sortare în practică, dar performanța sa depinde de alegerea pivotului. Este eficient și utilizează spațiu în mod optim (in-place), dar nu este stabil.
+
+Cod Java:
+public class QuickSort {
+    public void quickSort(int[] array) {
+        quickSortHelper(array, 0, array.length - 1);
+    }
+
+    private void quickSortHelper(int[] array, int low, int high) {
+        if (low < high) {
+            int pi = partition(array, low, high);
+            quickSortHelper(array, low, pi - 1);
+            quickSortHelper(array, pi + 1, high);
+        }
+    }
+
+    private int partition(int[] array, int low, int high) {
+        int pivot = array[high];
+        int i = low - 1;
+        for (int j = low; j < high; j++) {
+            if (array[j] < pivot) {
+                i++;
+                int temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+        }
+        int temp = array[i + 1];
+        array[i + 1] = array[high];
+        array[high] = temp;
+        return i + 1;
+    }
+}

@@ -1,0 +1,57 @@
+Merge Sort
+
+Descriere:
+Merge Sort este un algoritm de sortare eficient care folosește metoda divide et impera. Împarte lista în două jumătăți, sortează fiecare jumătate recursiv și apoi combină cele două liste sortate într-o singură listă sortată. Acest proces se repetă până când întreaga listă este sortată.
+
+Complexitate:
+- Cazul cel mai bun: O(n log n)
+- Cazul mediu: O(n log n)
+- Cazul cel mai rău: O(n log n)
+
+Merge Sort este un algoritm eficient și stabil, cu complexitate de timp O(n log n) în toate cazurile. Totuși, necesită memorie suplimentară pentru a stoca sublistele.
+
+Cod Java:
+public class MergeSort {
+    public void mergeSort(int[] array) {
+        mergeSortHelper(array, 0, array.length - 1);
+    }
+
+    private void mergeSortHelper(int[] array, int left, int right) {
+        if (left < right) {
+            int middle = (left + right) / 2;
+            mergeSortHelper(array, left, middle);
+            mergeSortHelper(array, middle + 1, right);
+            merge(array, left, middle, right);
+        }
+    }
+
+    private void merge(int[] array, int left, int middle, int right) {
+        int n1 = middle - left + 1;
+        int n2 = right - middle;
+        int[] leftArray = new int[n1];
+        int[] rightArray = new int[n2];
+        System.arraycopy(array, left, leftArray, 0, n1);
+        System.arraycopy(array, middle + 1, rightArray, 0, n2);
+        int i = 0, j = 0, k = left;
+        while (i < n1 && j < n2) {
+            if (leftArray[i] <= rightArray[j]) {
+                array[k] = leftArray[i];
+                i++;
+            } else {
+                array[k] = rightArray[j];
+                j++;
+            }
+            k++;
+        }
+        while (i < n1) {
+            array[k] = leftArray[i];
+            i++;
+            k++;
+        }
+        while (j < n2) {
+            array[k] = rightArray[j];
+            j++;
+            k++;
+        }
+    }
+}

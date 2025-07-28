@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewPoza1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@color/text_color"
+            android:text="\nInstrucțiuni de utilizare"
+            android:textAlignment="center"
+            android:textStyle="bold|italic"/>
+
+        <ImageView
+            android:id="@+id/imageViewPoza1"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/p1"/>
+
+        <TextView
+            android:id="@+id/textViewPoza2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@color/text_color"
+            android:text="Aplicația are mai multe butoane intuitive, care conduc spre diferite activitați."/>
+
+        <ImageView
+            android:id="@+id/imageViewPoza2"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/p2"/>
+
+        <TextView
+            android:id="@+id/textViewPoza3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@color/text_color"
+            android:text="După apăsarea butonului 'EXPLICAȚII TEORETICE', vom putea să alegem un algoritm de sortare din listă pentru a vedea o scurtă descriere a acestuia, complexitatea și o posibilă implementare."/>
+
+        <ImageView
+            android:id="@+id/imageViewPoza3"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/p3"/>
+
+        <TextView
+            android:id="@+id/textViewPoza4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@color/text_color"
+            android:text="După apăsarea butonului 'TESTEAZĂ UN ALGORITM' vom avea posibilitatea de a introduce diferite valori de la tastatură, sau putem să generăm random un număr dorit de valori, specificând și valoarea maximă și minimă.\nDupă selectarea algoritmului dorit, putem să începem sortarea."/>
+
+        <ImageView
+            android:id="@+id/imageViewPoza4"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/p4"/>
+
+        <TextView
+            android:id="@+id/textViewPoza5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@color/text_color"
+            android:text="Acum se pot vedea lista inițială introdusă de noi, lista sortată folosind algoritmul ales de noi, numărul de comparații care au fost efectuate în cadrul algoritmului, precum și timpul de sortare"/>
+
+        <ImageView
+            android:id="@+id/imageViewPoza5"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/p5"/>
+
+        <TextView
+            android:id="@+id/textViewPoza6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@color/text_color"
+            android:text="După apăsarea butonului 'PAȘI INTERMEDIARI' se poate vedea fiecare comparație facută, precum și lista intermediară"/>
+
+        <ImageView
+            android:id="@+id/imageViewPoza6"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/p6"/>
+
+        <TextView
+            android:id="@+id/textViewPoza7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@color/text_color"
+            android:text="După apăsarea butonului 'COMPARĂ DOI ALGORITMI', se pot introduce valori (ca si la secțiunea 'TESTEAZĂ UN algoritm', urmând să se aleagă doi algoritmi pe care dorim să îi comparăm)"/>
+
+        <ImageView
+            android:id="@+id/imageViewPoza7"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/p7"/>
+
+        <TextView
+            android:id="@+id/textViewPoza8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@color/text_color"
+            android:text="Pentru ambii algoritmi selectați se pot vedea numărul de comparații și timpul de sortare"/>
+
+        <ImageView
+            android:id="@+id/imageViewPoza8"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/p8"/>
+
+        <TextView
+            android:id="@+id/textViewPoza9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@color/text_color" />
+    </LinearLayout>
+</ScrollView>

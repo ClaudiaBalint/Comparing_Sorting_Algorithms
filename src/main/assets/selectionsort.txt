@@ -1,0 +1,30 @@
+Selection Sort
+
+Descriere:
+Selection Sort este un algoritm de sortare simplu care împarte lista în două părți: sublista elementelor sortate și sublista elementelor nesortate. Algoritmul continuă să selecteze cel mai mic element din sublista nesortată și să-l pună la sfârșitul sublistei sortate. Acest proces se repetă până când toate elementele sunt sortate.
+
+Complexitate:
+- Cazul cel mai bun: O(n^2)
+- Cazul mediu: O(n^2)
+- Cazul cel mai rău: O(n^2)
+
+Selection Sort este ineficient pentru liste mari, având o complexitate de timp quadratică. Este simplu de implementat și are avantajul că face un număr minim de interschimbări.
+
+Cod Java:
+public class SelectionSort {
+    public void selectionSort(int[] array) {
+        int n = array.length;
+        for (int i = 0; i < n - 1; i++) {
+            int minIndex = i;
+            for (int j = i + 1; j < n; j++) {
+                if (array[j] < array[minIndex]) {
+                    minIndex = j;
+                }
+            }
+            // Interschimbare
+            int temp = array[minIndex];
+            array[minIndex] = array[i];
+            array[i] = temp;
+        }
+    }
+}
